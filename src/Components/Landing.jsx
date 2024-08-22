@@ -43,7 +43,22 @@ useEffect(() => {
                                 </div>
                             </div>
                             <div className="col1 col-lg-5 col-md-6 col-sm-12" data-aos='fade-left'>
-                                <img src={image} alt="laptop" id="Laptop" />
+                            <div class="container221">
+  <div class="mockup mockup-macbook loaded opened">
+    <div class="part top">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top"/>
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover"/>
+
+      <video autoplay>
+        <source src="https://d1xm195wioio0k.cloudfront.net/images/video/support.mp4" type="video/mp4"/>
+      </video>
+    </div>
+    <div class="part bottom">
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover"/>
+      <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom"/>
+    </div>
+  </div>
+</div>
                             </div>
                         </div>
                     </div>
