@@ -1,0 +1,186 @@
+.main{
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1032%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(62%2c 1%2c 76%2c 1)'%3e%3c/rect%3e%3cpath d='M950.499327066624 323.3293841525666L1049.616104791513 425.96781209193097 1152.2545327308774 326.85103436704196 1053.1377550059883 224.2126064276776z' fill='rgba(155%2c 0%2c 175%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M827.451%2c396.277C864.087%2c393.636%2c897.832%2c375.917%2c915.963%2c343.973C933.864%2c312.433%2c933.171%2c273.708%2c914.748%2c242.47C896.617%2c211.727%2c863.085%2c195.91%2c827.451%2c193.896C787.248%2c191.624%2c744.1%2c198.404%2c721.211%2c231.533C695.37%2c268.933%2c689.05%2c320.349%2c713.687%2c358.553C736.894%2c394.539%2c784.742%2c399.355%2c827.451%2c396.277' fill='rgba(155%2c 0%2c 175%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1358.406%2c376.142C1388.415%2c374.487%2c1406.858%2c345.763%2c1419.813%2c318.643C1430.724%2c295.802%2c1430.384%2c270.747%2c1419.716%2c247.792C1406.664%2c219.708%2c1389.358%2c187.524%2c1358.406%2c186.513C1326.533%2c185.472%2c1304.736%2c215.401%2c1289.742%2c243.546C1275.836%2c269.649%2c1270.427%2c299.869%2c1284.027%2c326.132C1298.752%2c354.567%2c1326.434%2c377.905%2c1358.406%2c376.142' fill='rgba(155%2c 0%2c 175%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M95.67859912245986 282.9396595034126L154.60439765914307 393.7629683030189 265.42770645874936 334.83716976633565 206.50190792206615 224.01386096672937z' fill='rgba(155%2c 0%2c 175%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M80.90155183566904 386.2563158599619L230.90374484600335 316.3091445191987 160.95657350524016 166.3069515088644 10.954380494905848 236.25412284962758z' fill='rgba(155%2c 0%2c 175%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M509.78 186.43 a125.1 125.1 0 1 0 250.2 0 a125.1 125.1 0 1 0 -250.2 0z' fill='rgba(155%2c 0%2c 175%2c 1)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1032'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+.container{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#text{
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.col{
+    /* width: 60%; */
+    background-color: rgba(0, 0, 0, 0.397);
+    border-radius: 10px;
+    padding-top: 50px;
+    
+}
+.col h1{
+    font-size: 50px;
+    border-left: 5px solid grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.row{
+    display: flex;
+direction: ltr;
+}
+#Laptop{
+    width: 350px;
+    height: 300px;
+    transform: rotate(-30deg);
+    animation: Rotateit 3s linear 3;
+}
+
+@keyframes Rotateit{
+    0%{
+        transform: rotate(0deg);
+        transform: skew(10deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        transform: skew(-36deg);
+    }
+}
+.col1{
+    /* width: 40%; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in;
+}
+/* From Uiverse.io by csemszepp */ 
+.container1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .col1:hover{
+transform: scale(0.8);
+box-shadow: 10px 10px 20px Black;
+  }
+  .container1 .btn {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container1 .btn a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 400px;
+    z-index: 1;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+  }
+  
+  .container1 .btn:hover a {
+    letter-spacing: 3px;
+  }
+  
+  .container1 .btn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(45deg) translate(0);
+    transition: 0.5s;
+    filter: blur(0px);
+  }
+  
+  .container1 .btn:hover a::before {
+    transform: skewX(45deg) translate(200px);
+  }
+  
+  .container1 .btn::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+  }
+  
+  .container1 .btn:hover::before /*lightup button*/ {
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+  }
+  
+  .container1 .btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+  }
+  
+  .container1 .btn:hover::after /*lightup button*/ {
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+  }
+  
+  .container1 .btn:nth-child(1)::before,
+  .container1 .btn:nth-child(1)::after {
+    background: #ff1f71;
+    box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
+          0 0 60px #ff1f71;
+  }
+  
