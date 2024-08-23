@@ -231,3 +231,38 @@ height: 100%;
         align-items: center;
         padding: 10px;
   }
+  @media screen and (max-width: 768px) {
+    #Contact {
+background: url('./image/stacked-peaks-haikei.png');
+      background-size: 100%;
+      background-position: center;
+      /* background-repeat: no-repeat; */
+      height: 100%;
+      background-attachment: fixed;
+  }
+  }
+  @media screen and (max-width: 468px) {
+    .col12 {
+      /* width: 60%; */
+      border-radius: 10px;
+      /* padding-top: 50px; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      margin-top: 20px;
+  }
+  .text-center223 {
+    color: white;
+    font-size: 45px;
+    margin-top: 98px;
+    background: #04040430;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+  }
