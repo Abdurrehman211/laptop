@@ -4,7 +4,8 @@ import Navbar from './Components/Navbar';
 import Landing from './Components/Landing';
 import Loader from './Components/Loader';
 import About from './Components/About';
-
+import Products from './Components/Products';
+import Contact from './Components/Contact';
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -12,7 +13,7 @@ function App() {
     // Simulate loading delay
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // 3-second delay
+    }, 5000); // 3-second delay
 
     // Cleanup timer if the component unmounts
     return () => clearTimeout(timer);
@@ -28,8 +29,10 @@ function App() {
             <Navbar />
           </header>
           <Routes>
-            <Route path="/" element={<Landing />} />
+            <Route path="/home" element={<Landing />} />
             <Route path="/about" element={<About />} />
+            <Route path='/products' element={<Products />} />
+            <Route path='/contact' element={<Contact />} />
           </Routes>
         </Router>
       )}

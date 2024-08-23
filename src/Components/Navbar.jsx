@@ -9,7 +9,21 @@ import { useNavigate } from "react-router-dom";
 export default function Navbar() {
   const navigate = useNavigate();
   const HandleNavigate = () =>{
-    navigate("/");
+    navigate("/home");
+  }
+  const GotoAbout= () =>{
+    navigate("/about");
+  }
+  const GotoProducts=() =>{
+    navigate("/products");
+  }
+  var Search;
+  const GotoSearch=() =>{
+    Search=document.getElementById("search").value;
+    navigate(`/${Search}`);
+  }
+  const GotoContact= ()=>{
+    navigate("/contact");
   }
     return(
         <>
@@ -30,23 +44,23 @@ export default function Navbar() {
             <a className="nav-link " aria-current="page" onClick={HandleNavigate}>Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Products</a>
+            <a className="nav-link" onClick={GotoProducts} >Products</a>
           </li>
           <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               More
             </a>
             <ul className="dropdown-menu dropdown-menu-dark">
-              <li><a className="dropdown-item" style={{cursor: "pointer"}}>About Us</a></li>
-              <li><a className="dropdown-item" style={{cursor: "pointer"}}>Contact us</a></li>
+              <li><a className="dropdown-item" onClick={GotoAbout} style={{cursor: "pointer"}}>About Us</a></li>
+              <li><a className="dropdown-item" style={{cursor: "pointer"}} onClick={GotoContact}>Contact us</a></li>
               <li>
               </li>
             </ul>
           </li>
         </ul>
         <form className="d-flex mt-3" role="search">
-          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button className="btn btn-success" type="submit">Search</button>
+          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search"/>
+          <button className="btn btn-success" type="submit" onClick={GotoSearch} >Search</button>
         </form>
       </div>
     </div>
