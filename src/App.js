@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Landing from './Components/Landing';
-
 import Loader from './Components/Loader';
+import About from './Components/About';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -29,7 +29,7 @@ function App() {
           </header>
           <Routes>
             <Route path="/" element={<Landing />} />
-            {/* <Route path="/about" element={} /> */}
+            <Route path="/about" element={<About />} />
           </Routes>
         </Router>
       )}

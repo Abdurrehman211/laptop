@@ -37,11 +37,10 @@ export default function Navbar() {
               More
             </a>
             <ul className="dropdown-menu dropdown-menu-dark">
-              <li><a className="dropdown-item" href="#">About Us</a></li>
-              <li><a className="dropdown-item" href="#">Contact us</a></li>
+              <li><a className="dropdown-item" style={{cursor: "pointer"}}>About Us</a></li>
+              <li><a className="dropdown-item" style={{cursor: "pointer"}}>Contact us</a></li>
               <li>
               </li>
-              <li><a className="dropdown-item" href="#">Services</a></li>
             </ul>
           </li>
         </ul>
